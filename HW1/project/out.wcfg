@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/dsdl1/bcd311_bcd311_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bcd311_bcd311_sch_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/bcd311_bcd311_sch_tb/out3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">out3</obj_property>
+      <obj_property name="ObjectShortName">out3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bcd311_bcd311_sch_tb/out11" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">out11</obj_property>
+      <obj_property name="ObjectShortName">out11</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bcd311_bcd311_sch_tb/a0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">a0</obj_property>
+      <obj_property name="ObjectShortName">a0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bcd311_bcd311_sch_tb/a1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">a1</obj_property>
+      <obj_property name="ObjectShortName">a1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bcd311_bcd311_sch_tb/a2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">a2</obj_property>
+      <obj_property name="ObjectShortName">a2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bcd311_bcd311_sch_tb/a3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">a3</obj_property>
+      <obj_property name="ObjectShortName">a3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bcd311_bcd311_sch_tb/b0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">b0</obj_property>
+      <obj_property name="ObjectShortName">b0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bcd311_bcd311_sch_tb/b1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">b1</obj_property>
+      <obj_property name="ObjectShortName">b1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bcd311_bcd311_sch_tb/b2" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">b2</obj_property>
+      <obj_property name="ObjectShortName">b2</obj_property>
+      <obj_property name="label">b2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bcd311_bcd311_sch_tb/b3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">b3</obj_property>
+      <obj_property name="ObjectShortName">b3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bcd311_bcd311_sch_tb/c0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">c0</obj_property>
+      <obj_property name="ObjectShortName">c0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bcd311_bcd311_sch_tb/c1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">c1</obj_property>
+      <obj_property name="ObjectShortName">c1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bcd311_bcd311_sch_tb/c2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">c2</obj_property>
+      <obj_property name="ObjectShortName">c2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bcd311_bcd311_sch_tb/c3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">c3</obj_property>
+      <obj_property name="ObjectShortName">c3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bcd311_bcd311_sch_tb/d0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">d0</obj_property>
+      <obj_property name="ObjectShortName">d0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bcd311_bcd311_sch_tb/d1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">d1</obj_property>
+      <obj_property name="ObjectShortName">d1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bcd311_bcd311_sch_tb/d2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">d2</obj_property>
+      <obj_property name="ObjectShortName">d2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bcd311_bcd311_sch_tb/d3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">d3</obj_property>
+      <obj_property name="ObjectShortName">d3</obj_property>
+   </wvobject>
+</wave_config>

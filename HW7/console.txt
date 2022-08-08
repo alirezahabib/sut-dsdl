@@ -1,0 +1,28 @@
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+sent:  , received:  
+parity fault: 0
+
+sent: S, received: S
+parity fault: 0
+
+sent: a, received: a
+parity fault: 0
+
+sent: l, received: l
+parity fault: 0
+
+sent: a, received: a
+parity fault: 0
+
+sent: m, received: m
+parity fault: 0
+
+sent: !, received: !
+parity fault: 0
+
+Stopped at time : 1 us : File "C:/hw7-99109393/transmitter_tb.v" Line 90
+ISim>  

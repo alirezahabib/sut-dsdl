@@ -1,0 +1,21 @@
+
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Data in =   0, Data out =   z, Full = 0, Empty = 0, Push = 0, Pop = 0
+Data in =   1, Data out =   z, Full = 0, Empty = 0, Push = 1, Pop = 0
+Data in =   1, Data out =   z, Full = 0, Empty = 1, Push = 1, Pop = 0
+Data in =   2, Data out =   z, Full = 0, Empty = 1, Push = 1, Pop = 0
+Data in =   3, Data out =   z, Full = 0, Empty = 1, Push = 1, Pop = 0
+Data in =   4, Data out =   z, Full = 0, Empty = 1, Push = 1, Pop = 0
+Data in =   4, Data out =   z, Full = 1, Empty = 1, Push = 1, Pop = 0
+Data in =   4, Data out =   z, Full = 1, Empty = 1, Push = 0, Pop = 0
+Data in =   4, Data out =   z, Full = 1, Empty = 1, Push = 0, Pop = 1
+Data in =   4, Data out =   4, Full = 0, Empty = 1, Push = 0, Pop = 1
+Data in =   4, Data out =   3, Full = 0, Empty = 1, Push = 0, Pop = 1
+Data in =   4, Data out =   2, Full = 0, Empty = 1, Push = 0, Pop = 1
+Data in =   4, Data out =   1, Full = 0, Empty = 1, Push = 0, Pop = 1
+Data in =   4, Data out =   1, Full = 0, Empty = 0, Push = 0, Pop = 1
+Stopped at time : 510 ns :  in File "C:/HW4-99109393-project/stack_tb.v" Line 84 

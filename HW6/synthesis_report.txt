@@ -1,0 +1,393 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: incubator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "incubator.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "incubator"
+Output Format                      : NGC
+Target Device                      : xc3s400-4-pq208
+
+---- Source Options
+Top Module Name                    : incubator
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "incubator.v" in library work
+Module <incubator> compiled
+No errors in compilation
+Analysis of file <"incubator.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <incubator> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <incubator>.
+Module <incubator> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <incubator>.
+    Related source file is "incubator.v".
+    Found 1-bit register for signal <cooleron>.
+    Found 4-bit register for signal <crs>.
+    Found 1-bit register for signal <heateron>.
+    Found 1-bit 4-to-1 multiplexer for signal <cooleron$mux0000> created at line 40.
+    Found 9-bit comparator greater for signal <crs$cmp_gt0000> created at line 55.
+    Found 9-bit comparator greater for signal <crs$cmp_gt0001> created at line 57.
+    Found 9-bit comparator greater for signal <crs$cmp_gt0002> created at line 61.
+    Found 9-bit comparator less for signal <crs$cmp_lt0000> created at line 58.
+    Found 9-bit comparator less for signal <crs$cmp_lt0001> created at line 62.
+    Found 9-bit comparator less for signal <crs$cmp_lt0002> created at line 64.
+    Found 9-bit comparator greater for signal <heateron$cmp_gt0000> created at line 45.
+    Found 9-bit comparator less for signal <heateron$cmp_lt0000> created at line 43.
+    Found 1-bit 4-to-1 multiplexer for signal <heateron$mux0000> created at line 40.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <incubator> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 3
+ 1-bit register                                        : 2
+ 4-bit register                                        : 1
+# Comparators                                          : 8
+ 9-bit comparator greater                              : 4
+ 9-bit comparator less                                 : 4
+# Multiplexers                                         : 2
+ 1-bit 4-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <crs_0> (without init value) has a constant value of 0 in block <incubator>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+# Comparators                                          : 8
+ 9-bit comparator greater                              : 4
+ 9-bit comparator less                                 : 4
+# Multiplexers                                         : 2
+ 1-bit 4-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <crs_0> (without init value) has a constant value of 0 in block <incubator>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <incubator> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block incubator, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : incubator.ngr
+Top Level Output File Name         : incubator
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 16
+
+Cell Usage :
+# BELS                             : 37
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 1
+#      LUT3                        : 3
+#      LUT3_D                      : 1
+#      LUT3_L                      : 2
+#      LUT4                        : 22
+#      LUT4_D                      : 1
+#      LUT4_L                      : 1
+#      MUXF5                       : 4
+# FlipFlops/Latches                : 5
+#      FDC                         : 5
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 15
+#      IBUF                        : 9
+#      OBUF                        : 6
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400pq208-4 
+
+ Number of Slices:                       17  out of   3584     0%  
+ Number of Slice Flip Flops:              5  out of   7168     0%  
+ Number of 4 input LUTs:                 32  out of   7168     0%  
+ Number of IOs:                          16
+ Number of bonded IOBs:                  16  out of    141    11%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 5     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst_inv(rst_inv1_INV_0:O)          | NONE(cooleron)         | 5     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.770ns (Maximum Frequency: 173.310MHz)
+   Minimum input arrival time before clock: 7.761ns
+   Maximum output required time after clock: 7.508ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.770ns (frequency: 173.310MHz)
+  Total number of paths / destination ports: 43 / 5
+-------------------------------------------------------------------------
+Delay:               5.770ns (Levels of Logic = 3)
+  Source:            crs_1 (FF)
+  Destination:       crs_3 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: crs_1 to crs_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.720   1.329  crs_1 (crs_1)
+     LUT4_D:I1->O          1   0.551   0.996  crs_mux0000<0>8 (crs_mux0000<0>8)
+     LUT4:I1->O            1   0.551   0.869  crs_mux0000<0>51_SW0 (N4)
+     LUT4:I2->O            1   0.551   0.000  crs_mux0000<0>88 (crs_mux0000<0>)
+     FDC:D                     0.203          crs_3
+    ----------------------------------------
+    Total                      5.770ns (2.576ns logic, 3.194ns route)
+                                       (44.6% logic, 55.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 74 / 5
+-------------------------------------------------------------------------
+Offset:              7.761ns (Levels of Logic = 6)
+  Source:            T<3> (PAD)
+  Destination:       crs_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: T<3> to crs_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.821   1.405  T_3_IBUF (T_3_IBUF)
+     LUT4:I0->O            2   0.551   0.945  cooleron_mux000021 (cooleron_mux0000_bdd3)
+     LUT4:I2->O            1   0.551   0.996  crs_mux0000<2>198 (crs_mux0000<2>198)
+     LUT4:I1->O            1   0.551   0.000  crs_mux0000<2>1187_SW0_F (N26)
+     MUXF5:I0->O           1   0.360   0.827  crs_mux0000<2>1187_SW0 (N15)
+     LUT4:I3->O            1   0.551   0.000  crs_mux0000<2>1187 (crs_mux0000<2>)
+     FDC:D                     0.203          crs_1
+    ----------------------------------------
+    Total                      7.761ns (3.588ns logic, 4.173ns route)
+                                       (46.2% logic, 53.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              7.508ns (Levels of Logic = 1)
+  Source:            crs_3 (FF)
+  Destination:       crs<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: crs_3 to crs<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.720   1.144  crs_3 (crs_3)
+     OBUF:I->O                 5.644          crs_3_OBUF (crs<3>)
+    ----------------------------------------
+    Total                      7.508ns (6.364ns logic, 1.144ns route)
+                                       (84.8% logic, 15.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.61 secs
+ 
+--> 
+
+Total memory usage is 4520236 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
